@@ -16,11 +16,12 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         // create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene()
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
+        
         scene.rootNode.addChildNode(cameraNode)
         
         // place the camera
@@ -39,12 +40,17 @@ class GameViewController: UIViewController {
         ambientLightNode.light!.type = .ambient
         ambientLightNode.light!.color = UIColor.darkGray
         scene.rootNode.addChildNode(ambientLightNode)
+
+        //let ship = scene.rootNode.childNode(withName: "ship", recursively: true)!
         
-        // retrieve the ship node
-        let ship = scene.rootNode.childNode(withName: "ship", recursively: true)!
+        let url = Bundle.main.url(forResource: "art.scnassets/logo.stl", withExtension: nil)!
+        let logoNode = try! BinarySTLParser.createNodeFromSTL(at: url, unit: .meter)
+        
+
+        scene.rootNode.addChildNode(logoNode)
         
         // animate the 3d object
-        ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
+        // ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
         
         // retrieve the SCNView
         let scnView = self.view as! SCNView

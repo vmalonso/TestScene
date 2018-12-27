@@ -13,6 +13,7 @@
 		EF18C69F21D14D36006DC7A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF18C69D21D14D36006DC7A0 /* Main.storyboard */; };
 		EF18C6A121D14D37006DC7A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF18C6A021D14D37006DC7A0 /* Assets.xcassets */; };
 		EF18C6A421D14D37006DC7A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF18C6A221D14D37006DC7A0 /* LaunchScreen.storyboard */; };
+		EFE0F65B21D55EFF00A5104C /* BinarySTLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0F65A21D55EFF00A5104C /* BinarySTLParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EF18C6A021D14D37006DC7A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF18C6A321D14D37006DC7A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF18C6A521D14D37006DC7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE0F65A21D55EFF00A5104C /* BinarySTLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySTLParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EF18C69721D14D36006DC7A0 /* AppDelegate.swift */,
 				EF18C69921D14D36006DC7A0 /* art.scnassets */,
 				EF18C69B21D14D36006DC7A0 /* GameViewController.swift */,
+				EFE0F65A21D55EFF00A5104C /* BinarySTLParser.swift */,
 				EF18C69D21D14D36006DC7A0 /* Main.storyboard */,
 				EF18C6A021D14D37006DC7A0 /* Assets.xcassets */,
 				EF18C6A221D14D37006DC7A0 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				EF18C69C21D14D36006DC7A0 /* GameViewController.swift in Sources */,
 				EF18C69821D14D36006DC7A0 /* AppDelegate.swift in Sources */,
+				EFE0F65B21D55EFF00A5104C /* BinarySTLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VFL8GC5L8N;
 				INFOPLIST_FILE = TestScene/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VFL8GC5L8N;
 				INFOPLIST_FILE = TestScene/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
